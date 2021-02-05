@@ -22,8 +22,8 @@ export default {
   },
   methods: {
     routerHandle: function (event) {
-      if (this.$route.path !== this.route) {
-        this.$router.push(this.route)
+      if (this.$route.path !== '/projectdetail') {
+        this.$router.push('/projectdetail')
       }
     }
   }

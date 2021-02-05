@@ -8,7 +8,7 @@
             :height='200 + Math.random() * 100 + 200'
             :order="project.id"
         >
-            <ProjectCardItem :project="project" />
+            <ProjectCardItem :project="project"/>
         </waterfall-slot>
 </waterfall>
     </div>
