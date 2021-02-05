@@ -1,18 +1,43 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+ <div class="home">
+   <table cellpadding="5" cellspacing="5">
+     <tbody>
+       <tr>
+         <td><CardItem/></td>
+         <td><CardItem/></td>
+         <td><CardItem/></td>
+       </tr>
+       <tr>
+         <td><CardItem/></td>
+         <td><CardItem/></td>
+         <td><CardItem/></td>
+       </tr>
+    </tbody>
+   </table>
+ </div>
 </template>
-
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import CardItem from '@/components/CardItem.vue'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    CardItem
   }
 }
 </script>
+<style scoped>
+/* .table, th, td {
+  border: 10px solid transparent;
+} */
+/* .table{
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.table{
+  background:green;
+  width:50px
+}
+
+</style>
