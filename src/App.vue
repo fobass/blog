@@ -7,7 +7,7 @@
         </div>
       </div>
 
-      <img alt="Vue logo" class="logo" src="favicon.ico" style="width: 50px; height: 30px" />
+      <div alt="" class="logo" style="width: 50px; height: 30px" />
       <ul class="main-nav" id="js-menu">
         <router-link class="nav-links" to="/">Home</router-link>
         <router-link class="nav-links" to="/about">About</router-link>
@@ -174,16 +174,16 @@ export default {
 
 }
 html{
-  background: linear-gradient(
-          rgba(0, 0, 0, 0.4),
-          rgba(0, 0, 0, 0.4)
-        ),
-        url('assets/bakground.jpg') no-repeat center center fixed;
+  // background: linear-gradient(
+  //         rgba(0, 0, 0, 0.4),
+  //         rgba(0, 0, 0, 0.4)
+  //       ),
+  //       url('assets/bakground.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  // background-color: #061e36;
+  background-color: #091a29;
 }
 
 // #app {
@@ -362,7 +362,7 @@ body {
     overflow-y: auto;
   }
   .navbar a {
-    font-size: 20px;
+    font-size: 15px;
   }
   .navbar .closebtn {
     font-size: 20px;
@@ -431,6 +431,9 @@ body {
   }
   .main-view{
     padding: 25px;
+  }
+  .navbar a {
+    font-size: 12px;
   }
 }
 @media (min-width: 400px) {

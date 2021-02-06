@@ -5,6 +5,21 @@
             west
         </span>
         </router-link>
-        <h1>Test</h1>
+        <h1>{{ title }}</h1>
+        <h2>{{ project.description }}</h2>
     </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+      project: this.$store.getters.getProjetById(this.$route.params.id)
+    }
+  },
+  computed: {
+    title () {
+      return this.$route.params.title
+    }
+  }
+}
+</script>
